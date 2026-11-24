@@ -1,0 +1,6 @@
+{
+  "name": "RockyStay Suites",
+  "description": "Comfortable, secure short-let apartments in Tanke, Ilorin, Nigeria. Your home away from home in Ilorin.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

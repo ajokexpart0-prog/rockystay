@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enquiry Received | RockyStay Suites</title>
+    <meta
+      name="description"
+      content="Thank you for your booking enquiry with RockyStay Suites in Tanke, Ilorin. We will confirm availability shortly."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%233B82F6'/%3E%3Cpath d='M8 19L20 9.5L32 19' fill='none' stroke='%23F5CC4C' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='16.5' cy='25' r='3.3' fill='none' stroke='%23F5CC4C' stroke-width='2.3'/%3E%3Cpath d='M19.8 25H28.5M25.5 25V28M28.5 25V27.5' fill='none' stroke='%23F5CC4C' stroke-width='2.3' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --sky: #EAF3FF;
+        --navy: #2563EB;
+        --navy-deep: #1E56A0;
+        --gold: #F5CC4C;
+        --cream: #FFFFFF;
+        --charcoal: #334155;
+        --steel: #3B82F6;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cream);
+        color: var(--charcoal);
+        font-family: 'Nunito Sans', system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+      }
+      header {
+        background-color: var(--sky);
+        color: var(--navy-deep);
+        border-bottom: 1px solid #bfdbfe;
+        padding: 1rem 1.5rem;
+      }
+      .header-inner {
+        max-width: 1152px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: var(--navy-deep);
+        text-decoration: none;
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1.5rem;
+      }
+      .card {
+        max-width: 580px;
+        width: 100%;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 1rem;
+        padding: 2.5rem 2rem;
+        box-shadow: 0 12px 32px -12px rgba(11, 45, 91, 0.12);
+        text-align: center;
+      }
+      .check-badge {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto 1.25rem;
+        border-radius: 9999px;
+        background: rgba(11, 45, 91, 0.08);
+        color: var(--navy);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        margin: 0 0 0.75rem;
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        line-height: 1.15;
+        color: var(--navy);
+      }
+      p {
+        margin: 0 0 1.25rem;
+        color: #374151;
+      }
+      .note {
+        background: #f3f6fa;
+        border: 1px solid #dce5f2;
+        border-radius: 0.75rem;
+        padding: 1rem 1.25rem;
+        font-size: 0.95rem;
+        color: var(--navy);
+        margin-bottom: 1.75rem;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.875rem;
+        justify-content: center;
+      }
+      .btn-gold {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.625rem;
+        background-color: var(--gold);
+        color: var(--navy);
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .btn-gold:hover {
+        filter: brightness(0.96);
+      }
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.625rem;
+        border: 1px solid var(--navy);
+        color: var(--navy);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .btn-outline:hover {
+        background-color: rgba(11, 45, 91, 0.05);
+      }
+      footer {
+        background-color: var(--sky);
+        color: var(--navy-deep);
+        border-top: 1px solid #bfdbfe;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.875rem;
+      }
+      footer a {
+        color: var(--navy);
+        font-weight: 700;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <a href="/" class="brand">
+          <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+            <rect width="40" height="40" rx="10" fill="#3B82F6" stroke="#F5CC4C" stroke-width="1.5" />
+            <path d="M8 19L20 9.5L32 19" fill="none" stroke="#F5CC4C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="16.5" cy="25" r="3.2" fill="none" stroke="#F5CC4C" stroke-width="2.2" />
+            <path d="M19.7 25H28.5M25.5 25V28M28.5 25V27.5" fill="none" stroke="#F5CC4C" stroke-width="2.2" stroke-linecap="round" />
+          </svg>
+          <span>RockyStay Suites</span>
+        </a>
+        <a href="/apartments" style="color: #2563EB; font-weight: 700; text-decoration: none;">Browse Apartments</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="card" aria-labelledby="thanks-heading">
+        <div class="check-badge" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 6 9 17l-5-5" />
+          </svg>
+        </div>
+        <h1 id="thanks-heading">Thank You for Your Enquiry</h1>
+        <p>
+          We have received your booking enquiry for RockyStay Suites in Tanke, Ilorin. Our hospitality desk will review your dates and reach out promptly.
+        </p>
+        <div class="note">
+          <strong>Need an immediate response?</strong> Message us directly on WhatsApp or call
+          <a href="tel:+2349161959398" style="color: #2563EB; font-weight: 700;">09161959398</a> so we can confirm availability and share payment details.
+        </div>
+        <div class="actions">
+          <a
+            href="https://wa.me/2349161959398?text=Hello%20RockyStay%20Suites%2C%20I%20just%20submitted%20a%20booking%20enquiry%20form%20on%20your%20website%20and%20would%20like%20to%20confirm%20availability."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-gold"
+          >
+            Chat on WhatsApp
+          </a>
+          <a href="/apartments" class="btn-outline">Explore Apartments</a>
+          <a href="/" class="btn-outline">Back to Home</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      RockyStay Suites · Tanke, Ilorin, Nigeria · <a href="tel:+2349161959398">09161959398</a> · <a href="mailto:ajokexpart0@gmail.com">ajokexpart0@gmail.com</a>
+    </footer>
+  </body>
+</html>
